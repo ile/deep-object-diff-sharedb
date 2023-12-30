@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>deep-object-diff</h1>
+  <h1>deep-object-diff-sharedb</h1>
 
   ❄️
 
@@ -18,11 +18,19 @@
 A small library that can deep diff two JavaScript Objects, including nested structures of arrays and objects.
 
 ## Installation
-`yarn add deep-object-diff`
+`yarn add deep-object-diff-sharedb`
 
-`npm i --save deep-object-diff`
+`npm i --save deep-object-diff-sharedb`
+
+
+## Forked to add `sharedb()` function
+
+Returns an object which can be stored into an ArangoDB database. Still being tested, doesn't claim code correctness. Will probably burn 🔥 your house down. 
 
 ## Functions available:
+ - [`sharedb(originalObj, updatedObj)`](#sharedb)
+ returns a mergeable object - an object which can be stored into a database. Tested with ArangoDB with the [UPDATE opraration](https://docs.arangodb.com/3.11/aql/high-level-operations/update/) with `OPTIONS { mergeObjects: true, keepNull: false }`.
+
  - [`diff(originalObj, updatedObj)`](#diff)
  returns the difference of the original and updated objects
 
