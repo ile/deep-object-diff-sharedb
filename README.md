@@ -29,7 +29,7 @@ Returns an object which can be stored into an ArangoDB database. Still being tes
 
 ## Functions available:
  - [`sharedb(originalObj, updatedObj)`](#sharedb)
- returns a mergeable object - an object which can be stored into a database. Tested with ArangoDB with the [UPDATE opraration](https://docs.arangodb.com/3.11/aql/high-level-operations/update/) with `OPTIONS { mergeObjects: true, keepNull: false }`.
+ returns a mergeable object - an object which can be stored into a database. Tested with ArangoDB with the [UPDATE operation](https://docs.arangodb.com/3.11/aql/high-level-operations/update/) with `OPTIONS { mergeObjects: true, keepNull: false }`.
 
  - [`diff(originalObj, updatedObj)`](#diff)
  returns the difference of the original and updated objects
